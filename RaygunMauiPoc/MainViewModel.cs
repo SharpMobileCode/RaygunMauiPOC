@@ -37,6 +37,9 @@ public partial class MainViewModel : ObservableObject
 	{
 		Count++;
 
+		// Example of an unhandled exception. This exception does not appear in the Raygun
+		// dashboard. I would expect this exception to appear in the dashboard as an unhandled
+		// exception.
 		throw new ArgumentNullException("someArgumentName", "someArgumentName can not be null.");
 	}
 }
